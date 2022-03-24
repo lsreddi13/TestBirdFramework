@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Hybrid</groupId>
+	<artifactId>TestBird</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+
+	<dependencies>
+		<!--msedge selenium tools will work for download file with lower version 
+			of 3.14, if we use webdriver 4 and after then no need to user the below dependency -->
+		<!-- https://mvnrepository.com/artifact/com.microsoft.edge/msedge-selenium-tools-java -->
+		<dependency>
+			<groupId>com.microsoft.edge</groupId>
+			<artifactId>msedge-selenium-tools-java</artifactId>
+			<version>3.141.1</version>
+		</dependency>
+
+
+		<!-- Sikuli dependency -->
+		<!-- https://mvnrepository.com/artifact/org.sikuli/sikuli-api -->
+		<!-- <dependency> <groupId>org.sikuli</groupId> <artifactId>sikuli-api</artifactId> 
+			<version>1.2.0</version> </dependency> -->
+		<!-- https://mvnrepository.com/artifact/org.sikuli/sikuli-webdriver -->
+		<!-- <dependency> <groupId>org.sikuli</groupId> <artifactId>sikuli-webdriver</artifactId> 
+			<version>1.0.1</version> </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/com.sikulix/sikulixapi -->
+		<dependency>
+			<groupId>com.sikulix</groupId>
+			<artifactId>sikulixapi</artifactId>
+			<version>2.0.5</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!-- <dependency> <groupId>org.seleniumhq.selenium</groupId> <artifactId>selenium-java</artifactId> 
+			<version>4.1.2</version> </dependency> https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver 
+			<dependency> <groupId>org.seleniumhq.selenium</groupId> <artifactId>selenium-remote-driver</artifactId> 
+			<version>4.0.0-alpha-6</version> </dependency> -->
+
+
+
+		<!-- this is for selenium java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+		<!-- this is selenium webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.8.8</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- for read data from xls file -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-excelant</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+		<!-- till here read data from xls file -->
+	</dependencies>
+
+
+
+
+</project>
