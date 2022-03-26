@@ -83,7 +83,22 @@
 			<artifactId>poi-excelant</artifactId>
 			<version>5.1.0</version>
 		</dependency>
-		<!-- till here read data from xls file -->
+		<!-- till here read data from xls file --><!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+		<!-- using extent report to generate reports -->
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.2</version>
+		</dependency>
+
+		<!-- use this to generate custom reports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.5</version>
+		</dependency>
+
+
 	</dependencies>
 
 

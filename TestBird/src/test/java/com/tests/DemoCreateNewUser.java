@@ -18,6 +18,8 @@ import com.pages.CreateUser;
 import com.pages.DashboardPage;
 import com.pages.LoginPage;
 import com.pages.UsresPage;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -26,10 +28,12 @@ public class DemoCreateNewUser extends Base {
 	UsresPage up;
 	LoginPage lp;
 	CreateUser cu;
+	ExtentReports reports;
 
 	public DemoCreateNewUser() throws IOException {
 		super();
 		initiation();
+
 	}
 
 //	static WebDriver driver;
@@ -40,7 +44,7 @@ public class DemoCreateNewUser extends Base {
 	@Test(priority = 0)
 	public void test() throws InterruptedException, IOException {
 		try {
-
+			ExtentTest test = reports.startTest("TestName");
 			lp = new LoginPage();
 			lp.login(prop.getProperty("q_name"), prop.getProperty("q_pwd"));
 
@@ -92,7 +96,7 @@ public class DemoCreateNewUser extends Base {
 			Thread.sleep(3000);
 			String getUserName = up.getUserName();
 			System.out.println("created user with user name as : " + getUserName);
-			//verify new user exists in the search result.
+			// verify new user exists in the search result.
 			Assert.assertEquals(getUserName, new_User_Name);
 		} catch (Exception e) {
 			System.out.println("error occurred : " + e);
@@ -108,7 +112,7 @@ public class DemoCreateNewUser extends Base {
 
 		Thread.sleep(5000);
 
-//		UsresPage up = new UsresPage();
+		UsresPage up = new UsresPage();
 		Thread.sleep(5000);
 		// verify the newly added user
 		up.enterSearchUserName(new_User_Name);

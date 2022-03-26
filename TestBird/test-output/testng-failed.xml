@@ -6,7 +6,7 @@
       <class name="com.tests.DemoCreateNewUser">
         <methods>
           <include name="test"/>
-          <include name="tearDown"/>
+          <include name="verifyUsersList"/>
         </methods>
       </class> <!-- com.tests.DemoCreateNewUser -->
     </classes>

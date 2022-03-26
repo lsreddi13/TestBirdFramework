@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--905119751\testng-customsuite.xml</span>
+                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-492776495\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,12 +101,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.tests.DemoCreateNewUser" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.tests.DemoCreateNewUserAvantStackReport" class="method navigator-link" hash-for-method="createNewUserTest">createNewUserTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.tests.DemoCreateNewUser" class="method navigator-link" hash-for-method="verifyUsersList">verifyUsersList</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.tests.DemoCreateNewUserAvantStackReport" class="method navigator-link" hash-for-method="deleteUser">deleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tests.DemoCreateNewUserAvantStackReport" class="method navigator-link" hash-for-method="verifyUsersList">verifyUsersList</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -124,14 +129,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.tests.DemoCreateNewUser</span>
+              <span class="class-name">com.tests.DemoCreateNewUserAvantStackReport</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test">
-                  </a> <!-- test -->
-                  <span class="method-name">test</span>
+                  <a name="createNewUserTest">
+                  </a> <!-- createNewUserTest -->
+                  <span class="method-name">createNewUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser">
+                  </a> <!-- deleteUser -->
+                  <span class="method-name">deleteUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -146,7 +158,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--905119751\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-492776495\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -155,7 +167,7 @@
 &lt;suite parallel=&quot;none&quot; name=&quot;Default suite&quot;&gt;
   &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.tests.DemoCreateNewUser&quot;/&gt;
+      &lt;class name=&quot;com.tests.DemoCreateNewUserAvantStackReport&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -195,20 +207,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test')
-data.setCell(0, 2, 'com.tests.DemoCreateNewUser')
-data.setCell(0, 3, 46190);
+data.setCell(0, 1, 'createNewUserTest')
+data.setCell(0, 2, 'com.tests.DemoCreateNewUserAvantStackReport')
+data.setCell(0, 3, 43329);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyUsersList')
-data.setCell(1, 2, 'com.tests.DemoCreateNewUser')
-data.setCell(1, 3, 13695);
+data.setCell(1, 1, 'deleteUser')
+data.setCell(1, 2, 'com.tests.DemoCreateNewUserAvantStackReport')
+data.setCell(1, 3, 5025);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyUsersList')
+data.setCell(2, 2, 'com.tests.DemoCreateNewUserAvantStackReport')
+data.setCell(2, 3, 11);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 59 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -234,15 +250,39 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tests.DemoCreateNewUser</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">test</span>
+              <div class="chronological-class-name">com.tests.DemoCreateNewUserAvantStackReport</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testBefore</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createNewUserTest</span>
+                <span class="method-start">263 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=createNewUserTest status=SUCCESS method=DemoCreateNewUserAvantStackReport.createNew...)</span>
+                <span class="method-start">43593 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyUsersList</span>
-                <span class="method-start">46191 ms</span>
+                <span class="method-start">43833 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyUsersList status=SUCCESS method=DemoCreateNewUserAvantStackReport.verifyUsers...)</span>
+                <span class="method-start">43845 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">deleteUser</span>
+                <span class="method-start">44063 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=deleteUser status=SUCCESS method=DemoCreateNewUserAvantStackReport.deleteUser()[pri...)</span>
+                <span class="method-start">49088 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">49250 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

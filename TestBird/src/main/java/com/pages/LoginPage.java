@@ -39,5 +39,7 @@ public class LoginPage extends Base {
 //		WebElement loginBtn = driver.findElement(By.id("btnLogin"));
 		loginBtn.click();
 		Thread.sleep(3000);
+		
+		
 	}
 }
